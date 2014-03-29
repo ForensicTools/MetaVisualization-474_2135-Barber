@@ -1,0 +1,19 @@
+{
+	// Local dev server
+	"url": "http://192.168.1.80/",
+
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": ".",
+			"file_exclude_patterns":[],
+			"folder_exclude_patterns":[]
+		}
+	],
+	"settings":
+	{
+	//sublime->preferences->default
+	}
+}
+
