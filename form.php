@@ -15,6 +15,7 @@ if (isset($_POST['upload'])){
 		default:
 			$message = 'Sorry, there was a problem uploading '. $_FILES['filename']
 			break;
+			
 	}
 }
 
