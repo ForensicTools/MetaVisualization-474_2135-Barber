@@ -1,0 +1,601 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ses",
+				"session_start"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"fi",
+				"fields_with_max_lengths"
+			],
+			[
+				"has",
+				"has_presence"
+			],
+			[
+				"req",
+				"require_once"
+			],
+			[
+				"htm",
+				"htmlspecialchars"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"preg",
+				"preg_match"
+			],
+			[
+				"is_s",
+				"is_string"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"php",
+				"php"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"new",
+				"new_plaintext"
+			],
+			[
+				"twe",
+				"tweet"
+			],
+			[
+				"tim",
+				"timestamp"
+			],
+			[
+				"see",
+				"seen_times"
+			],
+			[
+				"time",
+				"timestamp"
+			],
+			[
+				"l",
+				"last_time"
+			],
+			[
+				"lo",
+				"localtime"
+			],
+			[
+				"st",
+				"strftime"
+			],
+			[
+				"fo",
+				"formurl"
+			],
+			[
+				"co",
+				"command_opt"
+			],
+			[
+				"gen",
+				"generate_tweet"
+			],
+			[
+				"com",
+				"command"
+			],
+			[
+				"raw",
+				"raw_input"
+			],
+			[
+				"s",
+				"segment"
+			],
+			[
+				"de",
+				"decrypted"
+			],
+			[
+				"pr",
+				"print"
+			],
+			[
+				"re",
+				"replace"
+			],
+			[
+				"ne",
+				"next_message"
+			],
+			[
+				"try",
+				"try	Try/Except"
+			],
+			[
+				"en",
+				"entry"
+			],
+			[
+				"go",
+				"googlepass"
+			],
+			[
+				"do",
+				"document_entry"
+			],
+			[
+				"documen",
+				"documents_feed"
+			],
+			[
+				"g",
+				"gpass"
+			],
+			[
+				"to",
+				"total_segs"
+			],
+			[
+				"cu",
+				"curr_seg"
+			],
+			[
+				"send",
+				"send_message"
+			],
+			[
+				"url",
+				"url_cipher"
+			],
+			[
+				"ci",
+				"ciphertext"
+			],
+			[
+				"cipher",
+				"ciphertext"
+			],
+			[
+				"ex",
+				"execute"
+			],
+			[
+				"ru",
+				"run_command"
+			],
+			[
+				"se",
+				"seg"
+			],
+			[
+				"curr",
+				"curr_hashtag"
+			],
+			[
+				"la",
+				"last_checked"
+			],
+			[
+				"key",
+				"keys_seen"
+			],
+			[
+				"cip",
+				"ciphertext"
+			],
+			[
+				"AES",
+				"AESObject"
+			],
+			[
+				"str",
+				"string"
+			],
+			[
+				"decry",
+				"decrypted"
+			],
+			[
+				"H",
+				"HashtagFound"
+			],
+			[
+				"A",
+				"AESObject"
+			],
+			[
+				"enc",
+				"encrypt"
+			],
+			[
+				"std",
+				"stderr"
+			],
+			[
+				"d",
+				"decrypt"
+			],
+			[
+				"le",
+				"letter1"
+			],
+			[
+				"test",
+				"test3"
+			],
+			[
+				"p",
+				"php	<?php … ?>"
+			],
+			[
+				"po",
+				"port_num"
+			],
+			[
+				"ch",
+				"chomp"
+			],
+			[
+				"cho",
+				"chomp"
+			],
+			[
+				"con",
+				"config"
+			],
+			[
+				"el",
+				"elsif"
+			],
+			[
+				"W",
+				"Which"
+			],
+			[
+				"te",
+				"tempint"
+			],
+			[
+				"t",
+				"transmit"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"me",
+				"menu_options"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "form.php",
+			"settings":
+			{
+				"buffer_size": 691,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "metaviz.sublime-project",
+			"settings":
+			{
+				"buffer_size": 106,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/perl.sublime-build",
+	"command_palette":
+	{
+		"height": 127.0,
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"snipp",
+				"Snippet: html"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML (Erlang)"
+			],
+			[
+				"projec",
+				"Project: Save As"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"htmn",
+				"Set Syntax: HTML (Erlang)"
+			],
+			[
+				"css ",
+				"Set Syntax: CSS"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"snippet",
+				"Snippet: SESSION['…']"
+			],
+			[
+				"Snippet: ",
+				"Snippet: html"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/BonJarber/Dropbox/my_code/Forensics/MetaVisualization-474_2135-Barber/test.html",
+		"/C/Users/BonJarber/Dropbox/my_code/Forensics/MetaVisualization-474_2135-Barber/form.php",
+		"/C/Users/BonJarber/Dropbox/my_code/Forenics/test.html",
+		"/C/Users/BonJarber/Dropbox/Security/Presentations/#C2/encoder.py",
+		"/C/Users/BonJarber/Dropbox/my_code/ISTS/linux_things.sh",
+		"/C/Users/BonJarber/Dropbox/my_code/ISTS/p.sh",
+		"/C/Users/BonJarber/Dropbox/my_code/ISTS/scan.pl",
+		"/C/Users/BonJarber/Dropbox/Security/Presentations/#C2/setup.py",
+		"/C/Python27/Lib/encodings/cp437.py",
+		"/C/Users/BonJarber/Dropbox/my_code/ISTS/injector.pl",
+		"/C/Users/BonJarber/Dropbox/my_code/ISTS/ssh_scanner.pl",
+		"/C/Users/BonJarber/Dropbox/Security/Presentations/#C2/listener.py",
+		"/C/Users/BonJarber/Dropbox/my_code/Project_Euler/Python/prob2.py",
+		"/C/Users/BonJarber/Dropbox/my_code/SSH burrow/ssh_burrow.pl",
+		"/C/Users/BonJarber/Dropbox/my_code/SSH burrow/ssh_burrow.py",
+		"/C/Users/BonJarber/Dropbox/ccdc/DNS/DNS Configuration",
+		"/C/Users/BonJarber/Dropbox/CCDC/Random/Set Hostname and IP",
+		"/C/Users/BonJarber/Dropbox/ccdc/AD/AD Setup",
+		"/C/Users/BonJarber/Dropbox/CCDC/NTP/NTP Configuration",
+		"/C/Users/BonJarber/Dropbox/CCDC/NTP/win_ntp.bat",
+		"/C/Users/BonJarber/Dropbox/CCDC/NTP/Linux_NTP_Configuration",
+		"/C/Users/BonJarber/Dropbox/my_code/RC3/DeAuth/DeAuth.pl",
+		"/C/Users/BonJarber/Dropbox/my_code/Ciphers/AES_Decryption.pl",
+		"/C/Users/BonJarber/Dropbox/my_code/Movie Checker/movieRecommender.pl",
+		"/C/Users/BonJarber/Dropbox/my_code/Random/NCL_4_word_parser.pl",
+		"/C/Users/BonJarber/Dropbox/CCDC/FTP/vsftpd Setup",
+		"/C/Users/BonJarber/Dropbox/my_code/Encryption/AES_Decryption.pl",
+		"/C/Users/BonJarber/Dropbox/CTF/NCL/NCL-CRYPTO-6",
+		"/C/Users/BonJarber/Dropbox/my_code/Random/list",
+		"/C/Users/BonJarber/Dropbox/my_code/Random/new_list.txt",
+		"/C/Users/BonJarber/Dropbox/my_code/Random/NCL_php_brue_force.php",
+		"/C/Users/BonJarber/Dropbox/my_code/RC3/IP Tables/eziptables.pl",
+		"/C/Users/BonJarber/AppData/Roaming/Sublime Text 3/Packages/User/perl.sublime-build",
+		"/C/Users/BonJarber/Dropbox/my_code/explore_california/tours/tour_detail_backpack_cal.html",
+		"/C/Users/BonJarber/Dropbox/my_code/explore_california/tours/tour_detail_bigsur.html",
+		"/C/Users/BonJarber/Dropbox/my_code/explore_california/tours/tour_detail_backpack.html",
+		"/C/Users/BonJarber/Dropbox/my_code/explore_california/tours.html",
+		"/C/Users/BonJarber/Dropbox/my_code/explore_california/support.html",
+		"/C/Users/BonJarber/Dropbox/my_code/explore_california/mission.html",
+		"/C/Users/BonJarber/Dropbox/my_code/explore_california/index.html",
+		"/C/Users/BonJarber/Dropbox/my_code/explore_california/contact.html",
+		"/C/Users/BonJarber/Dropbox/my_code/explore_california/explorers.html",
+		"/C/Users/BonJarber/Dropbox/my_code/explore_california/resources.html",
+		"/C/Users/BonJarber/.gitignore_global",
+		"/C/Users/BonJarber/Desktop/putty.pl"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"select",
+			"()",
+			"backpack.ht",
+			"Sur",
+			"4315"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"backpack_cal.ht",
+			"4314"
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "form.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 691,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								429,
+								429
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "metaviz.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 106,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								106,
+								106
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "metaviz.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
