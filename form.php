@@ -1,25 +1,21 @@
 <?php
+use metaviz\UploadFile;
 
-$message = '';
+$max = 100 * 1024;
+$result = [];
 if (isset($_POST['upload'])){
-	switch ($_FILES['filename']['error']) {
-		case 0:
-			$message = $_FILES['filename']['name'] . ' was uploaded successfully.';
-			break
-		case 2:
-			$message = $_FILES['filename']['name'] . ' is too big.';
-			break
-		case 4:
-			$message = 'No file selected.'
-
-		default:
-			$message = 'Sorry, there was a problem uploading '. $_FILES['filename']
-			break;
-			
+	require_once 'src/metaviz/UploadFile.php';
+	$destination = __DIR__ . '/uploaded/';
+	try {
+		$upload = new UploadFile($destination);
+		$upload->setMaxSize($max);
+		// $upload->allowAllTypes();
+		$upload->upload();
+		$result = $upload->getMessages();
+	} catch (Exception $e) {
+		$result[] = $e->getMessage();
 	}
-}
-
-
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -29,6 +25,22 @@ if (isset($_POST['upload'])){
 </head>
 <body>
 	<h1>Upload Files</h1>
+	<?php 
+		if($result){ ?>
+		<ul class="result">
+			<?php foreach ($result as $message) {
+				echo "<li>$message</li>";
+			} ?>
+		</ul>
+<form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post" enctype="multipart/form-data">
+<p>
+	
+	<input type="hidden" name="MAX FILE SIZE" value="<?php echo $max;?>">
+	<label for="filename">Select File:</label>
+	<input type="file" name="filename" id="filename">
+</p>
+
+</form>
 	
 	
 </body>
