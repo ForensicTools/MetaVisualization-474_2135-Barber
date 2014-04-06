@@ -2,9 +2,6 @@
 
 namespace metaviz;
 
-/**
- * 
- */
  class UploadFile
  {
  	
@@ -89,8 +86,21 @@ namespace metaviz;
  	public function upload($renameDuplicates = true){
  		$this->renameDuplicates = $renameDuplicates;
  		$uploaded = current($_FILES);
- 		if ($this->checkFile($uploaded)){
- 			$this->moveFile($uploaded);
+ 		if (is_array($uploaded['name'])){
+ 			foreach ($uploaded['name'] as $key => $value) {
+ 				$currentFile['name'] = $uploaded['name'][$key];
+ 				$currentFile['type'] = $uploaded['type'][$key];
+ 				$currentFile['tmp_name'] = $uploaded['tmp_name'][$key];
+ 				$currentFile['error'] = $uploaded['error'][$key];
+ 				$currentFile['size'] = $uploaded['size'][$key];
+ 				if ($this->checkFile($currentFile)){
+ 					$this->moveFile($currentFile);
+ 				}
+ 			}
+ 		} else {
+ 			if ($this->checkFile($uploaded)){
+ 				$this->moveFile($uploaded);
+ 			}
  		}
  	}
 
@@ -108,12 +118,12 @@ namespace metaviz;
  			return false;
  		}
 	 	if ($this->typeCheckingOn) {
-	 		if (!this->checkType($file)){
+	 		if (!$this->checkType($file)){
 	 			return false;
-	 		}
 	 	}
- 		this->checkName($file);
+ 		$this->checkName($file);
  		return true;
+ 		}
  	}
 
  	// Checks for errors numbers, creates messages
@@ -123,7 +133,7 @@ namespace metaviz;
  			case 2:
  				$this->messages[] = $file['name'] . ' is too big: (max: ' . 
  					self::convertFromBytes($this->maxSize) . ').';
- 				break
+ 				break;
  			case 3:
  				$this->messages[] = $file['name'] . ' was only partially uploaded.';
  				break;
