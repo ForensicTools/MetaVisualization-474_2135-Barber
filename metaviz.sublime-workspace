@@ -4,6 +4,142 @@
 		"selected_items":
 		[
 			[
+				"su",
+				"success"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"mov",
+				"move_uploaded_file"
+			],
+			[
+				"fi",
+				"file"
+			],
+			[
+				"ex",
+				"existing"
+			],
+			[
+				"name",
+				"nameparts"
+			],
+			[
+				"nam",
+				"name"
+			],
+			[
+				"renam",
+				"renameDuplicates"
+			],
+			[
+				"no",
+				"nospaces"
+			],
+			[
+				"not",
+				"notTrusted"
+			],
+			[
+				"type",
+				"typeCheckingOn"
+			],
+			[
+				"typ",
+				"typeCheckingOn"
+			],
+			[
+				"is",
+				"is_nan"
+			],
+			[
+				"chec",
+				"checkName"
+			],
+			[
+				"new",
+				"newName"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"el",
+				"else"
+			],
+			[
+				"ser",
+				"serverMax"
+			],
+			[
+				"nu",
+				"number_format"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"strto",
+				"strtolower"
+			],
+			[
+				"ini_",
+				"ini_get"
+			],
+			[
+				"m",
+				"max"
+			],
+			[
+				"max",
+				"maxSize"
+			],
+			[
+				"me",
+				"message"
+			],
+			[
+				"up",
+				"upload"
+			],
+			[
+				"upl",
+				"upload"
+			],
+			[
+				"upload",
+				"uploaded"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"Upl",
+				"UploadFile"
+			],
+			[
+				"Up",
+				"UploadFile"
+			],
+			[
+				"meta",
+				"metaviz"
+			],
+			[
+				"req",
+				"req1	require_once …"
+			],
+			[
+				"uplo",
+				"uploaded"
+			],
+			[
 				"ses",
 				"session_start"
 			],
@@ -12,16 +148,8 @@
 				"print_r"
 			],
 			[
-				"fi",
-				"fields_with_max_lengths"
-			],
-			[
 				"has",
 				"has_presence"
-			],
-			[
-				"req",
-				"require_once"
 			],
 			[
 				"htm",
@@ -50,10 +178,6 @@
 			[
 				"pass",
 				"password"
-			],
-			[
-				"new",
-				"new_plaintext"
 			],
 			[
 				"twe",
@@ -172,10 +296,6 @@
 				"ciphertext"
 			],
 			[
-				"ex",
-				"execute"
-			],
-			[
 				"ru",
 				"run_command"
 			],
@@ -260,10 +380,6 @@
 				"config"
 			],
 			[
-				"el",
-				"elsif"
-			],
-			[
 				"W",
 				"Which"
 			],
@@ -278,10 +394,6 @@
 			[
 				"in",
 				"input"
-			],
-			[
-				"me",
-				"menu_options"
 			]
 		]
 	},
@@ -291,7 +403,15 @@
 			"file": "form.php",
 			"settings":
 			{
-				"buffer_size": 691,
+				"buffer_size": 1046,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/metaviz/UploadFile.php",
+			"settings":
+			{
+				"buffer_size": 5369,
 				"line_ending": "Windows"
 			}
 		},
@@ -299,24 +419,124 @@
 			"file": "metaviz.sublime-project",
 			"settings":
 			{
-				"buffer_size": 106,
+				"buffer_size": 245,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "metaviz.sublime-workspace",
+			"settings":
+			{
+				"buffer_size": 6879,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/stylesheet.css",
+			"settings":
+			{
+				"buffer_size": 28,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "metaviz.TODO",
+			"settings":
+			{
+				"buffer_size": 133,
+				"line_ending": "Windows"
 			}
 		}
 	],
 	"build_system": "Packages/User/perl.sublime-build",
 	"command_palette":
 	{
-		"height": 127.0,
+		"height": 58.0,
 		"selected_items":
 		[
+			[
+				"git q",
+				"Git: Quick Commit"
+			],
+			[
+				"git pus",
+				"Git: Push Current Branch"
+			],
+			[
+				"q",
+				"Git: Quick Commit"
+			],
+			[
+				"git push",
+				"Git: Push Current Branch"
+			],
+			[
+				"git pu",
+				"Git: Push"
+			],
+			[
+				"git",
+				"Git: Push"
+			],
 			[
 				"insta",
 				"Package Control: Install Package"
 			],
 			[
+				"qui",
+				"Git: Quick Commit"
+			],
+			[
+				"git co",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"git ",
+				"Git: Commit"
+			],
+			[
+				"git ad",
+				"Git: Add Current File"
+			],
+			[
+				"git st",
+				"Git: Status"
+			],
+			[
+				"task",
+				"Tasks: New document"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"gist",
+				"Gist: Update File"
+			],
+			[
+				"createp",
+				"Gist: Create Public Gist"
+			],
+			[
 				"snipp",
 				"Snippet: html"
+			],
+			[
+				"htn",
+				"Set Syntax: HTML (Erlang)"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Discover Packages"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show All Errors"
 			],
 			[
 				"htm",
@@ -339,10 +559,6 @@
 				"Set Syntax: CSS"
 			],
 			[
-				"instal",
-				"Package Control: Install Package"
-			],
-			[
 				"snippet",
 				"Snippet: SESSION['…']"
 			],
@@ -351,7 +567,7 @@
 				"Snippet: html"
 			]
 		],
-		"width": 400.0
+		"width": 416.0
 	},
 	"console":
 	{
@@ -372,7 +588,58 @@
 	},
 	"file_history":
 	[
-		
+		"/C/Users/BonJarber/Dropbox/my_code/Forensics/MetaVisualization-474_2135-Barber/metaviz.sublime-project",
+		"/C/Users/BonJarber/Dropbox/my_code/Forensics/MetaVisualization-474_2135-Barber/functions.php",
+		"/C/Users/BonJarber/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/BonJarber/AppData/Roaming/Sublime Text 3/Packages/User/Git.sublime-settings",
+		"/C/Users/BonJarber/AppData/Roaming/Sublime Text 3/Packages/Git/Git.sublime-settings",
+		"/C/Users/BonJarber/AppData/Roaming/Sublime Text 3/Packages/User/Gist.sublime-settings",
+		"/C/Users/BonJarber/Dropbox/my_code/Forensics/MetaVisualization-474_2135-Barber/LICENSE",
+		"/C/Users/BonJarber/Dropbox/my_code/Forensics/MetaVisualization-474_2135-Barber/test.html",
+		"/C/Users/BonJarber/Dropbox/my_code/Forensics/MetaVisualization-474_2135-Barber/form.php",
+		"/C/Users/BonJarber/Dropbox/my_code/Forenics/test.html",
+		"/C/Users/BonJarber/Dropbox/Security/Presentations/#C2/encoder.py",
+		"/C/Users/BonJarber/Dropbox/my_code/ISTS/linux_things.sh",
+		"/C/Users/BonJarber/Dropbox/my_code/ISTS/p.sh",
+		"/C/Users/BonJarber/Dropbox/my_code/ISTS/scan.pl",
+		"/C/Users/BonJarber/Dropbox/Security/Presentations/#C2/setup.py",
+		"/C/Python27/Lib/encodings/cp437.py",
+		"/C/Users/BonJarber/Dropbox/my_code/ISTS/injector.pl",
+		"/C/Users/BonJarber/Dropbox/my_code/ISTS/ssh_scanner.pl",
+		"/C/Users/BonJarber/Dropbox/Security/Presentations/#C2/listener.py",
+		"/C/Users/BonJarber/Dropbox/my_code/Project_Euler/Python/prob2.py",
+		"/C/Users/BonJarber/Dropbox/my_code/SSH burrow/ssh_burrow.pl",
+		"/C/Users/BonJarber/Dropbox/my_code/SSH burrow/ssh_burrow.py",
+		"/C/Users/BonJarber/Dropbox/ccdc/DNS/DNS Configuration",
+		"/C/Users/BonJarber/Dropbox/CCDC/Random/Set Hostname and IP",
+		"/C/Users/BonJarber/Dropbox/ccdc/AD/AD Setup",
+		"/C/Users/BonJarber/Dropbox/CCDC/NTP/NTP Configuration",
+		"/C/Users/BonJarber/Dropbox/CCDC/NTP/win_ntp.bat",
+		"/C/Users/BonJarber/Dropbox/CCDC/NTP/Linux_NTP_Configuration",
+		"/C/Users/BonJarber/Dropbox/my_code/RC3/DeAuth/DeAuth.pl",
+		"/C/Users/BonJarber/Dropbox/my_code/Ciphers/AES_Decryption.pl",
+		"/C/Users/BonJarber/Dropbox/my_code/Movie Checker/movieRecommender.pl",
+		"/C/Users/BonJarber/Dropbox/my_code/Random/NCL_4_word_parser.pl",
+		"/C/Users/BonJarber/Dropbox/CCDC/FTP/vsftpd Setup",
+		"/C/Users/BonJarber/Dropbox/my_code/Encryption/AES_Decryption.pl",
+		"/C/Users/BonJarber/Dropbox/CTF/NCL/NCL-CRYPTO-6",
+		"/C/Users/BonJarber/Dropbox/my_code/Random/list",
+		"/C/Users/BonJarber/Dropbox/my_code/Random/new_list.txt",
+		"/C/Users/BonJarber/Dropbox/my_code/Random/NCL_php_brue_force.php",
+		"/C/Users/BonJarber/Dropbox/my_code/RC3/IP Tables/eziptables.pl",
+		"/C/Users/BonJarber/AppData/Roaming/Sublime Text 3/Packages/User/perl.sublime-build",
+		"/C/Users/BonJarber/Dropbox/my_code/explore_california/tours/tour_detail_backpack_cal.html",
+		"/C/Users/BonJarber/Dropbox/my_code/explore_california/tours/tour_detail_bigsur.html",
+		"/C/Users/BonJarber/Dropbox/my_code/explore_california/tours/tour_detail_backpack.html",
+		"/C/Users/BonJarber/Dropbox/my_code/explore_california/tours.html",
+		"/C/Users/BonJarber/Dropbox/my_code/explore_california/support.html",
+		"/C/Users/BonJarber/Dropbox/my_code/explore_california/mission.html",
+		"/C/Users/BonJarber/Dropbox/my_code/explore_california/index.html",
+		"/C/Users/BonJarber/Dropbox/my_code/explore_california/contact.html",
+		"/C/Users/BonJarber/Dropbox/my_code/explore_california/explorers.html",
+		"/C/Users/BonJarber/Dropbox/my_code/explore_california/resources.html",
+		"/C/Users/BonJarber/.gitignore_global",
+		"/C/Users/BonJarber/Desktop/putty.pl"
 	],
 	"find":
 	{
@@ -414,7 +681,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -423,15 +690,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 691,
+						"buffer_size": 1046,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								429,
-								429
+								1046,
+								1046
 							]
 						],
 						"settings":
@@ -443,35 +710,150 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "metaviz.sublime-project",
+					"file": "src/metaviz/UploadFile.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 106,
+						"buffer_size": 5369,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								106,
-								106
+								5354,
+								5354
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2214.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "metaviz.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 245,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "metaviz.sublime-workspace",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6879,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								502,
+								502
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "css/stylesheet.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 28,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "metaviz.TODO",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 133,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								133,
+								133
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PlainTasks/PlainTasks.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -512,6 +894,10 @@
 	{
 		"height": 0.0
 	},
+	"output.git":
+	{
+		"height": 100.0
+	},
 	"project": "metaviz.sublime-project",
 	"replace":
 	{
@@ -549,7 +935,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 290.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

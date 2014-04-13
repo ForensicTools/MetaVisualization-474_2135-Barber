@@ -36,7 +36,7 @@ $error = error_get_last();
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 </head>
 <body>
-
+	<div class="body">
 	<h1>Upload Files</h1>
 	<?php if($result || $error){ ?>
 		<ul class="result">
@@ -70,6 +70,7 @@ data-displaymax="<?php echo $_SESSION['displaymax'];?>">
 <input type="submit" name="upload" value="Upload File">
 </p>
 </form>
+</div>
 <script src="js/checkmultiple.js"></script>
 </body>
 </html>
