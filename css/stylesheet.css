@@ -1,18 +1,27 @@
 @charset "utf-8";
 
 body {
-    background-color: #FFFFFF;
+    /*Colors/Font*/
+    background-color: #EBF5FF;
     color: #252525;
     font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    
+    /*Positioning*/
+    margin: auto;
+    width: 50%;
+    vertical-align: middle;
 }
 form {
-    margin-left: 40px;
+    margin-right: 40px;
 }
 
 label {
-    width: 115px;
+    width: 100px;
     display: inline-block;
     font-weight: bold;
+}
+h1 {
+    margin-left: 60px;
 }
 [type=submit] {
     margin-left: 120px;
@@ -20,4 +29,9 @@ label {
 .result {
     font-weight: bold;
     color: #012773;
+}
+.center
+{
+    
+
 }
