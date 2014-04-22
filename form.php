@@ -9,7 +9,7 @@ if (!isset($_SESSION['maxfiles'])) {
 	$_SESSION['displaymax'] = UploadFile::convertFromBytes($_SESSION['postmax']);
 }
 
-$max = 1000 * 1024;
+$max = 5000 * 1024;
 $result = array();
 
 if (isset($_POST['upload'])){
@@ -20,14 +20,28 @@ if (isset($_POST['upload'])){
 		$upload->allowAllTypes();
 		$upload->upload();
 		$result = $upload->getMessages();
+		$status = $upload->getStatus();
 	} catch (Exception $e) {
 		$result[] = $e->getMessage();
 	}
 }
 $error = error_get_last();
+
+if ($result) {
+	if ($status) { 
+		$filenames = "";
+		foreach ($result as $filedir) {
+			$filedir = escapeshellarg($filedir);
+			$filenames.=" $filedir";
+		}
+		$filenames = str_replace("'", "", $filenames);
+		$hashes = exec("python src/metaviz/process.py $filenames");
+		#http_redirect("graph.php",array("hashes" => $hashes),true, HTTP_REDIRECT_PERM);
+		$_SESSION['hashes'] = $hashes;
+		header("Location: graphs.php");
+		}
+	}
 ?>
-
-
 <!doctype html>
 <html lang="en">
 <head> 
@@ -44,15 +58,14 @@ $error = error_get_last();
 
 			if ($error) {
 				echo "<li>{$error['message']}</li>";
-			}
-			if ($result) {
 				foreach ($result as $message) {
 					echo "<li>$message</li>";
-				}
-			} ?>
+					}
+			}
+			 ?>
 		</ul>
 	<?php } ?>
-<form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post" enctype="multipart/form-data">
+<form action="<?php echo ""?>" method="post" enctype="multipart/form-data">
 <p>
 <input type="hidden" name="MAX_FILE_SIZE" value="<?php echo $max;?>">
 <label for="filename">Select File:</label>
