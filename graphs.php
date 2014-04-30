@@ -1,34 +1,33 @@
 <?php 
 
 session_start();
-#require_once("src/metaviz/functions.php");
-#connect_to_db();
-$conn = new mysqli("localhost","root","yourpassword", "MetaViz");
- ?>
+require_once("functions.php");
+$conn = connect_to_db();
+check_new_metadata($conn);
+list_images();
+?>
 
 <!DOCTYPE html>
 <html>
 <head>
 	<title>MetaViz - Image Comparison</title>
-	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/graph.css">
 </head>
 <body>
-	<?php if (isset($_SESSION['hashes'])) {
-		$hashval = str_replace(array("[","]"), "", $_SESSION['hashes']);
-		#Seperate if multiple hashes
-		if ($values = $conn->query("SELECT * FROM images WHERE hash = $hashval")) {
-			while ($row = $values->fetch_assoc()) {
-				foreach ($row as $key => $value) {
-					if (isset($value)) {
-						echo "$key = $value<br>";	
-					}
-				}
-				}
-			#mysqli_free_result($values);
-		}
-
-	}
+	<?php 
+		echo "<br />";
+		#simple();
+		generate_graph();
 	?>
+	<img src="src/pChart127/pChart/hashgraph1.png" alt="">
+	<?php
+		echo "<form action=\"\" method=POST>";
+		make_options_button(5); 
+		echo "<input type=\"submit\" value=\"Update Graph\"></form>";
+	?>
+	<br>
+	<form action="form.php" method="GET"><input type="submit" value="Upload More Images"></form>
+	<form action="form.php" method="POST"><input type="submit" name="reset" value="Reset"></form>
 
 </body>
 </html>

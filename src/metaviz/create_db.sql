@@ -1,8 +1,8 @@
 USE MetaViz;
 DROP TABLE IF EXISTS images;
 CREATE TABLE images (
-	hash varchar(68) NOT NULL PRIMARY KEY,
-	name varchar(150),
+	Hash varchar(68) NOT NULL PRIMARY KEY,
+	Name varchar(150),
 	FileSize varchar(10),
 	FilePermissions char(9),
 	FileType varchar(10),

@@ -1,13 +1,15 @@
 TO DO:
    Upload Form:
-
+     ☐ Little more CSS work if time
+     ☐ Maybe Logo
    Processing:
-
+     ☐ Clean up script
+       ☐ Turn steps into functions
+       ☐ Properly Comment
    Display:
      ☐ Google Maps Integration: https://developers.google.com/maps/articles/phpsqlajax_v3
-       
+     ☐ Graphs - http://jpgraph.net/
    General:
      ☐ CSS Sheet
-
 LONG TERM:
   ☐ Reverse Google Image Search Uploads

@@ -2,6 +2,9 @@
 use metaviz\UploadFile;
 
 session_start();
+if (isset($_POST['reset'])) {
+	session_unset();
+}
 require_once 'src/metaviz/UploadFile.php';
 if (!isset($_SESSION['maxfiles'])) {
 	$_SESSION['maxfiles'] = ini_get('max_file_uploads');
@@ -28,7 +31,7 @@ if (isset($_POST['upload'])){
 $error = error_get_last();
 
 if ($result) {
-	if ($status) { 
+	if (isset($status) && $status) { 
 		$filenames = "";
 		foreach ($result as $filedir) {
 			$filedir = escapeshellarg($filedir);
@@ -36,7 +39,6 @@ if ($result) {
 		}
 		$filenames = str_replace("'", "", $filenames);
 		$hashes = exec("python src/metaviz/process.py $filenames");
-		#http_redirect("graph.php",array("hashes" => $hashes),true, HTTP_REDIRECT_PERM);
 		$_SESSION['hashes'] = $hashes;
 		header("Location: graphs.php");
 		}
@@ -55,7 +57,6 @@ if ($result) {
 	<?php if($result || $error){ ?>
 		<ul class="result">
 			<?php 
-
 			if ($error) {
 				echo "<li>{$error['message']}</li>";
 				foreach ($result as $message) {
@@ -83,6 +84,12 @@ data-displaymax="<?php echo $_SESSION['displaymax'];?>">
 <input type="submit" name="upload" value="Upload File">
 </p>
 </form>
+<p>
+<?php 
+	if (isset($_SESSION['user_hashes'])) {
+		echo "<form action=graphs.php><input type=submit value=\"View Graphs\"></form>";
+}?>
+</p>
 </div>
 <script src="js/checkmultiple.js"></script>
 </body>
