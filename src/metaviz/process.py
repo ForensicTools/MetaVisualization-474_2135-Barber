@@ -8,11 +8,11 @@ import hashlib
 # Change 'yourpassword' to your mysql password
 con = mdb.connect('localhost', 'root', 'yourpassword', 'MetaViz');
 
-sys.stderr = open('/dev/null', 'w')
+#sys.stderr = open('/dev/null', 'w')
 
+image_dir = "uploaded/"
 files = sys.argv
 files = files[1:]
-
 hashes = [];
 
 def key_exists(key):
@@ -41,7 +41,11 @@ def hashimage(image):
 		img_hash = hashlib.sha256(data).hexdigest()
 		return img_hash
 
+for x in xrange(len(files)):
+	files[x] = image_dir + files[x]#.strip("'")
+
 for image in files:
+	
 	with con:
 		cur = con.cursor()
 	imagehash = hashimage(image)
@@ -49,30 +53,31 @@ for image in files:
 	check = cur.execute(sql_statement)
 	
 	if check == 0:
-		sql = "INSERT INTO images (hash) VALUES (\'" + imagehash + '\')'
+		sql = "INSERT INTO images (Hash) VALUES (\'" + imagehash + '\')'
 		cur.execute(sql)
-		sql2 = "INSERT INTO images (name) VALUES (\'" + image[15:] +'\')' 
-		#cur.execute(sql2)
+		sql2 = "UPDATE images SET Name =\'" + str(image[9:]) + "\' WHERE hash=\'" + imagehash + "\'"
+		cur.execute(sql2)
 	else:
 		# Remove from list of files
-		pass
+		files.remove(image)
+
 	hashes.append(imagehash)
 
-with exiftool.ExifTool() as et:
-	metadata = et.get_metadata_batch(files)
+if len(files)>0:
+	with exiftool.ExifTool() as et: 
+		metadata = et.get_metadata_batch(files)
 
-i=0
-for d in metadata:
-	with con:
-		cur = con.cursor()
-	keys = list(d)
-	for key in keys:
-		value = d[key]
-		key=key.split(':', 1)[-1]
-		key=key.replace('/','1')
-		if key_exists(key):
-			sql = "UPDATE images SET " + key + "=\'" + str(value) + "\' WHERE hash=\'" + hashes[i] + "\'"
-			cur.execute(sql) 
+	i=0
+	for d in metadata:
+		with con:
+			cur = con.cursor()
+		keys = list(d)
+		for key in keys:
+			value = d[key]
+			key=key.split(':', 1)[-1]
+			key=key.replace('/','1')
+			if key_exists(key):
+				sql = "UPDATE images SET " + key + "=\'" + str(value) + "\' WHERE hash=\'" + hashes[i] + "\'"
+				cur.execute(sql) 
 
-
-print hashes;
+print hashes

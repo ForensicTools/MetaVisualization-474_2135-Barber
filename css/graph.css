@@ -21,25 +21,14 @@ label {
     font-weight: bold;
 }
 h1 {
-    margin-left: 60px;
-}
-[type=submit] {
-    margin-left: 120px;
-}
-.result {
-    font-weight: bold;
-    color: #012773;
-}
-.center
-{
-    
-
+    margin-left: 10px;
 }
 .bounding-box {
-  background-image: url();
+  background-image: url(...);
   background-size: contain;
   position: absolute;
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
+}

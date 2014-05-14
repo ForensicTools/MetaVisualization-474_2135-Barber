@@ -2,6 +2,9 @@
 use metaviz\UploadFile;
 
 session_start();
+if (isset($_POST['reset'])) {
+	session_unset();
+}
 require_once 'src/metaviz/UploadFile.php';
 if (!isset($_SESSION['maxfiles'])) {
 	$_SESSION['maxfiles'] = ini_get('max_file_uploads');
@@ -9,7 +12,7 @@ if (!isset($_SESSION['maxfiles'])) {
 	$_SESSION['displaymax'] = UploadFile::convertFromBytes($_SESSION['postmax']);
 }
 
-$max = 1000 * 1024;
+$max = 5000 * 1024;
 $result = array();
 
 if (isset($_POST['upload'])){
@@ -20,14 +23,27 @@ if (isset($_POST['upload'])){
 		$upload->allowAllTypes();
 		$upload->upload();
 		$result = $upload->getMessages();
+		$status = $upload->getStatus();
 	} catch (Exception $e) {
 		$result[] = $e->getMessage();
 	}
 }
 $error = error_get_last();
+
+if ($result) {
+	if (isset($status) && $status) { 
+		$filenames = "";
+		foreach ($result as $filedir) {
+			$filedir = escapeshellarg($filedir);
+			$filenames.=" $filedir";
+		}
+		$filenames = str_replace("'", "", $filenames);
+		$hashes = exec("python src/metaviz/process.py $filenames");
+		$_SESSION['hashes'] = $hashes;
+		header("Location: graphs.php");
+		}
+	}
 ?>
-
-
 <!doctype html>
 <html lang="en">
 <head> 
@@ -41,18 +57,16 @@ $error = error_get_last();
 	<?php if($result || $error){ ?>
 		<ul class="result">
 			<?php 
-
 			if ($error) {
 				echo "<li>{$error['message']}</li>";
-			}
-			if ($result) {
 				foreach ($result as $message) {
 					echo "<li>$message</li>";
-				}
-			} ?>
+					}
+			}
+			 ?>
 		</ul>
 	<?php } ?>
-<form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post" enctype="multipart/form-data">
+<form action="<?php echo ""?>" method="post" enctype="multipart/form-data">
 <p>
 <input type="hidden" name="MAX_FILE_SIZE" value="<?php echo $max;?>">
 <label for="filename">Select File:</label>
@@ -70,6 +84,12 @@ data-displaymax="<?php echo $_SESSION['displaymax'];?>">
 <input type="submit" name="upload" value="Upload File">
 </p>
 </form>
+<p>
+<?php 
+	if (isset($_SESSION['user_hashes'])) {
+		echo "<form action=graphs.php><input type=submit value=\"View Graphs\"></form>";
+}?>
+</p>
 </div>
 <script src="js/checkmultiple.js"></script>
 </body>

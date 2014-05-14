@@ -18,6 +18,7 @@ class UploadFile
 	protected $notTrusted = array('bin', 'cgi', 'exe', 'js', 'pl', 'php', 'py', 'sh');
 	protected $suffix = '.upload';
 	protected $renameDuplicates;
+	protected $status;
 	
 	public function __construct($uploadFolder)
 	{
@@ -100,6 +101,10 @@ class UploadFile
 	
 	public function getMessages(){
 		return $this->messages;
+	}
+
+	public function getStatus(){
+		return $this->status;
 	}
 	
 	protected function checkFile($file){
@@ -195,14 +200,17 @@ class UploadFile
 		$filename = isset($this->newName) ? $this->newName : $file['name'];
 		$success = move_uploaded_file($file['tmp_name'], $this->destination . $filename);
 		if ($success) {
-			$result = $file['name'] . ' was uploaded successfully';
 			if (!is_null($this->newName)) {
-				$result .= ', and was renamed ' . $this->newName;
+				$result = $this->newName;
 			}
-			$result .= '.';
+			else{
+				$result = $file['name'];
+			}
 			$this->messages[] = $result;
+			$this->status = true;
 		} else {
 			$this->messages[] = 'Could not upload ' . $file['name'];
+			$this->status = false;
 		}
 	}
 }
